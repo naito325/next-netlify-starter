@@ -1,23 +1,25 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
-
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
+    <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px', textAlign: 'center' }}>
+      <h1 style={{ color: '#0070f3' }}>タスク自動化アプリへようこそ！</h1>
+      <p>このページは Next.js と Netlify を使ってデプロイされています。</p>
+      <p>更新が反映されていれば、ここに表示されるテキストが変わっているはずです。</p>
+      <a
+        href="https://github.com/naito325/next-netlify-starter"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: 'inline-block',
+          marginTop: '20px',
+          padding: '10px 20px',
+          backgroundColor: '#0070f3',
+          color: '#fff',
+          borderRadius: '5px',
+          textDecoration: 'none'
+        }}
+      >
+        GitHub リポジトリを見る
+      </a>
     </div>
-  )
+  );
 }
